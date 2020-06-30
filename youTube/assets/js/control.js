@@ -1,9 +1,6 @@
 const findVideos = () => {
   let videos = document.querySelectorAll('.video');
-
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
-  }
+  videos.forEach((item) => setupVideo(item));
 }
 
 const setupVideo = video => {
